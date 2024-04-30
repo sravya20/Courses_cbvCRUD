@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Detail</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+    <div class="container">
+        <h1> Course Detail</h1>
+        <ol>
+            <li><h3> Course Name : {{ course.name }}</h3></li>
+            <li><h3> Course Description : {{ course.description }}</h3></li>
+            <li><h3> Course Instructor : {{ course.instructor }}</h3></li>
+            <li><h3> Course Rating : {{ course.rating }}</h3></li>
+            <li><h3> <a href="/update/{{ course.id }}"> UPDATE </a></h3></li>
+            <li><h3> <a href="/delete/{{ course.id }}">DELETE</a></h3></li>
+            <li><h3> <a href="/courses/">Back to Courses</a></h3></li>
+
+        </ol>
+
+
+    </div>
+
+
+</body>
+</html>
